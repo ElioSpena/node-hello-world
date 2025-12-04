@@ -13,4 +13,17 @@ function countVowels(userWord) {
   return count;
 }
 
-export { countVowels };
+function findMax(numbs) {
+  if (!numbs || numbs.length === 1) {
+    return console.log("inserisci dei numeri..");
+  }
+  let maxNumb = numbs[0];
+  numbs.forEach((numb) => {
+    if (numb > maxNumb) {
+      maxNumb = numb;
+    }
+  });
+  return maxNumb;
+}
+
+export { countVowels, findMax };
